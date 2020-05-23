@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebForm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      /*font-family: 'Balsamiq Sans', cursive;*/
+      background-color: #e0ffff;
+    }
+
+    .form-container {
+      background-color: #fff;
+      max-width: 450px;
+      width: 95%;
+      margin: auto;
+      padding: 40px;
+    }
+
+    #form {
+
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.4rem 0.4rem;
+      outline: none;
+      font-size: 1rem;
+      font-family: 'Amatic SC', cursive;
+      background-color: #fffafa;
+    }
+
+    .form-heading {
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: blue;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.4rem 0.4rem;
+      outline: none;
+      font-size: 1rem;
+      font-family: 'Balsamiq Sans', cursive;
+      background-color: #add8e6;
+      color: #0000ff;
+    }
+
+    .menu-container {
+      background-color: #fff;
+      max-width: 450px;
+      width: 95%;
+      margin: auto;
+      padding: 10px;
+    }
+
+    a {
+      display: inline-block;
+      width: 40%;
+      margin: 0.5rem 1.2rem;
+      padding: 0.4rem 0.4rem;
+      outline: none;
+      font-size: 1rem;
+      font-family: 'Balsamiq Sans', cursive;
+      background-color: #add8e6;
+      color: #0000ff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <a href="index.html">Регистрация</a>
+    <a href="login.html">Вход</a>
+  </div>
+  <div class="form-container">
+    <h3 class="form-heading">Вход</h3>
+    <form action="https://getsimpleform.com/messages?form_api_token=5d8942d3fd09d50c69270a1596c54801" id="form" method="post">
+      <input type="text" id="login" name="login" placeholder="Login">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <input class="button" type="submit" id="submit" value="Войти"/>
+      <input type='hidden' name='redirect_to' value="https://simeongor.github.io/lazyload/" />
+    </form>
+  </div>
+
+  <script>
+    
+  </script>
+</body>
+</html>
